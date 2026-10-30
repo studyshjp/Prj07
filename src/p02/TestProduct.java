@@ -133,13 +133,14 @@ class	Product implements Ipo {
 	
 	// fields
 	private	ProductDta	p;
+	private Scanner in;
 	
 	
 	//method
 	@Override
 	public void input() {
 		// TODO Auto-generated method stub
-		Scanner		in	=	new	Scanner(System.in);
+//		Scanner		in	=	new	Scanner(System.in);
 		
 		
 		

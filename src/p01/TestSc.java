@@ -1,6 +1,6 @@
 package p01;
 
-import java.nio.charset.Charset;
+// import java.nio.charset.Charset;
 
 // import java.util.Scanner;
 
@@ -155,8 +155,8 @@ class Sc {
 
 public class TestSc {
 
-	private static String totStr;
-	private static Sc sc2;
+//	private static String totStr;
+//	private static Sc sc2;
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -241,13 +241,17 @@ public class TestSc {
 		System.out.println("average" + sc4.calcAvg());
 		System.out.println("grade" + sc4.calcGrade());
 		
-		
-		
+	
+	
 	}
+		
 
-	private static Object getTot() {
+
+
+/*	private static Object getTot() {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
-}
+*/
+	
+ }
