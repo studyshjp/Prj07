@@ -22,7 +22,7 @@ num,name,kor,eng,mat
 */
   // 입력:번호,제품코드,수량,단가
   //      num, pcode, amount, price
-  // P01:새우깡, P02:빅파이, P03:짱구, P04:초코파이, P05:수박맛초코파이
+  // P01:aa, P02:bb, P03:cc, P04:dd, P05:ee
   // 출력:번호,제품명,수량,단가,금액(수량*단가)
   //      num, pname, amount, price, kum
 
