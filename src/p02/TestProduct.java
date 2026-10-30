@@ -9,7 +9,7 @@ package p02;
 */
 // 입력:번호,제품코드,수량,단가
 //      num, code, amount, price
-// P01:aa, P02:bb, P03:cc, P04:dd, P05:ee
+// P01:aa, P02:ab, P03:ac, P04:ad, P05:ae
 // 출력:번호,제품명,수량,단가,금액(수량*단가)
 //      num, name, amount, price, kum
 
@@ -162,14 +162,27 @@ class	Product implements Ipo {
 	@Override
 	public void process() {
 		// TODO Auto-generated method stub
-		//	name P01:aa, P02:bb, P03:cc, P04:dd, P05:ee
+		//	name P01:aa, P02:ab, P03:ac, P04:ad, P05:ae
 			String	name	=	"aa";
+			if(p.getCode() == "P01");	// code == "p01" / == .equals("P01")
+			p.setName("aa");
 			p.setName(name);
+		
 			
-		
-		
+			if (p.getCode().equals("P02"))	//== .equals("P02")
+				p.setName(name);
+			else
+			if (p.getCode().equals("P03"))
+				p.setName("ac");
+			else
+			if(p.getCode().equals("P04"))
+				p.setName("ad");
+
+			
 		//	price	금액(수량*단가)
-			double	kum	=	10000.0;
+			// double	kum	=	10000.0;
+			double	kum	=	p.getAmount() * p.getPrice();
+			
 			p.setKum(kum);
 		
 		
@@ -179,9 +192,13 @@ class	Product implements Ipo {
 	@Override
 	public void output() {
 		// TODO Auto-generated method stub
-		System.out.println(p);
-		
-		
+		// System.out.println(p);	// p.toString()
+		System.out.println("번호,제품명,수량,단가,금액");
+		String	format = "%05d	%s	%d	%.3f	%.3f";
+		String	msg	=	String.format(format, 
+				p.getNum(), p.getName(), p.getAmount(), p.getPrice(),
+				p.getKum());
+		System.out.println(msg);
 		
 	}
 		
