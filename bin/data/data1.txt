@@ -21,10 +21,10 @@ num,name,kor,eng,mat
 4,P05,28,1900.0
 */
   // 입력:번호,제품코드,수량,단가
-  //      num, pcode, amount, price
+  //      num, code, amount, price
   // P01:aa, P02:bb, P03:cc, P04:dd, P05:ee
   // 출력:번호,제품명,수량,단가,금액(수량*단가)
-  //      num, pname, amount, price, kum
+  //      num, name, amount, price, kum
 
 
 
